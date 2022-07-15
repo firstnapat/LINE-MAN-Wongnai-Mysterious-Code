@@ -20,8 +20,9 @@ func main() {
     if err != nil {
         panic(err)
     }
+    fmt.Printf("Decoded text: %s\n", sd)   
     fmt.Printf("Decoded text: %s\n", Reverse(string(sd)))   
     decodeText := strings.ReplaceAll(Reverse(string(sd)), ":", " ")
-    fmt.Println(decodeText)
+    fmt.Println("Decoded text:",decodeText)
 }
   
